@@ -11,9 +11,37 @@ npx cap sync
 
 ## API
 
-<docgen-index></docgen-index>
+<docgen-index>
+
+* [`imprimirTexto(...)`](#imprimirtexto)
+* [`statusImpressora()`](#statusimpressora)
+
+</docgen-index>
 
 <docgen-api>
-<!-- run docgen to generate docs from the source -->
-<!-- More info: https://github.com/ionic-team/capacitor-docgen -->
+<!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
+
+### imprimirTexto(...)
+
+```typescript
+imprimirTexto(options: { mensagem: string; alinhar?: string; size?: number; font?: string; }) => Promise<void>
+```
+
+| Param         | Type                                                                               |
+| ------------- | ---------------------------------------------------------------------------------- |
+| **`options`** | <code>{ mensagem: string; alinhar?: string; size?: number; font?: string; }</code> |
+
+--------------------
+
+
+### statusImpressora()
+
+```typescript
+statusImpressora() => Promise<{ status: string; }>
+```
+
+**Returns:** <code>Promise&lt;{ status: string; }&gt;</code>
+
+--------------------
+
 </docgen-api>

@@ -1,10 +1,8 @@
 import { registerPlugin } from '@capacitor/core';
 
-import type { GposPluginPlugin } from './definitions';
+import type { GposPlugin } from './definitions';
 
-const GposPlugin = registerPlugin<GposPluginPlugin>('GposPlugin', {
-  web: () => import('./web').then((m) => new m.GposPluginWeb()),
-});
+const Gpos = registerPlugin<GposPlugin>('Gpos');
 
 export * from './definitions';
-export { GposPlugin };
+export { Gpos };
