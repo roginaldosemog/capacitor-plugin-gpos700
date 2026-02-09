@@ -1,0 +1,41 @@
+{
+  "api": {
+    "name": "GposPlugin",
+    "slug": "gposplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "imprimirTexto",
+        "signature": "(options: { mensagem: string; alinhar?: string; size?: number; font?: string; }) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ mensagem: string; alinhar?: string | undefined; size?: number | undefined; font?: string | undefined; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "imprimirtexto"
+      },
+      {
+        "name": "statusImpressora",
+        "signature": "() => Promise<{ status: string; }>",
+        "parameters": [],
+        "returns": "Promise<{ status: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "statusimpressora"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}

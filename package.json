@@ -1,5 +1,5 @@
 {
-  "name": "gertec-capacitor-plugin",
+  "name": "capacitor-plugin-gpos700",
   "version": "0.0.1",
   "description": "Plugin for GPOS700",
   "main": "dist/plugin.cjs.js",

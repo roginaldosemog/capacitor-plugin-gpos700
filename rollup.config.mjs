@@ -4,7 +4,7 @@ export default {
     {
       file: 'dist/plugin.js',
       format: 'iife',
-      name: 'capacitorGposPlugin',
+      name: 'capacitorPluginGpos700',
       globals: {
         '@capacitor/core': 'capacitorExports',
       },

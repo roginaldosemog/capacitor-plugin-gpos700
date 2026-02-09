@@ -1,11 +1,11 @@
-# gertec-capacitor-plugin
+# capacitor-plugin-gpos700
 
 Plugin for GPOS700
 
 ## Install
 
 ```bash
-npm install gertec-capacitor-plugin
+npm install capacitor-plugin-gpos700
 npx cap sync
 ```
 
