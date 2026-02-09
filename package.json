@@ -1,6 +1,6 @@
 {
-  "name": "capacitor-plugin-gpos700",
-  "version": "0.0.1",
+  "name": "capacitor-plugin-gpos700x",
+  "version": "0.1.0",
   "description": "Plugin for GPOS700",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -9,16 +9,17 @@
   "files": [
     "android/src/main/",
     "android/build.gradle",
-    "dist/"
+    "dist/",
+    "README.md"
   ],
   "author": "Igor Gomes",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/roginaldosemog.git"
+    "url": "https://github.com/roginaldosemog/capacitor-plugin-gpos700"
   },
   "bugs": {
-    "url": "https://github.com/roginaldosemog/issues"
+    "url": "https://github.com/roginaldosemog/capacitor-plugin-gpos700/issues"
   },
   "keywords": [
     "capacitor",
@@ -52,7 +53,7 @@
     "typescript": "^5.9.3"
   },
   "peerDependencies": {
-    "@capacitor/core": ">=8.0.0"
+    "@capacitor/core": ">=7.0.0"
   },
   "prettier": "@ionic/prettier-config",
   "eslintConfig": {
