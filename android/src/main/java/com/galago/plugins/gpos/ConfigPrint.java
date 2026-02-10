@@ -28,8 +28,7 @@ public class ConfigPrint {
         this.avancaLinhas = 0;
     }
 
-    public ConfigPrint(String fonte, String alinhamento, int tamanho, int offSet, int lineSpace, boolean negrito,
-            boolean italico, boolean sublinhado) {
+    public ConfigPrint(String fonte, String alinhamento, int tamanho, int offSet, int lineSpace, boolean negrito, boolean italico, boolean sublinhado) {
         this.fonte = fonte;
         this.alinhamento = alinhamento;
         this.tamanho = tamanho;
@@ -40,8 +39,7 @@ public class ConfigPrint {
         this.sublinhado = sublinhado;
     }
 
-    public ConfigPrint(String fonte, String alinhamento, int tamanho, int offSet, int iHeight, int iWidth,
-            int lineSpace, boolean negrito, boolean italico, boolean sublinhado) {
+    public ConfigPrint(String fonte, String alinhamento, int tamanho, int offSet, int iHeight, int iWidth, int lineSpace, boolean negrito, boolean italico, boolean sublinhado) {
         this.fonte = fonte;
         this.alinhamento = alinhamento;
         this.tamanho = tamanho;
@@ -61,19 +59,9 @@ public class ConfigPrint {
     public void setFonte(String fonte) {
         this.fonte = fonte;
         switch (fonte) {
-            case "NORMAL":
-                break;
-            case "DEFAULT":
-                break;
-            case "DEFAULT BOLD":
-                break;
-            case "MONOSPACE":
-                break;
-            case "SANS SERIF":
-                break;
-            case "SERIF":
-                break;
-            default:
+            case "NORMAL", "DEFAULT", "DEFAULT BOLD", "MONOSPACE", "SANS SERIF", "SERIF" -> {
+            }
+            default ->
                 setFont(fonte);
         }
     }

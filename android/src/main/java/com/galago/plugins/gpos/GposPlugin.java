@@ -20,31 +20,31 @@ public class GposPlugin extends Plugin {
     }
 
     @PluginMethod
-public void imprimirTexto(PluginCall call) {
-    String mensagem = call.getString("mensagem");
-    String alinhar = call.getString("alinhar", "CENTER");
-    int size = call.getInt("size", 20);
-    String fonte = call.getString("font", "NORMAL"); // Captura a fonte enviada
+    public void imprimirTexto(PluginCall call) {
+        String mensagem = call.getString("mensagem");
+        String alinhar = call.getString("alinhar", "CENTER");
+        int size = call.getInt("size", 20);
+        String fonte = call.getString("font", "NORMAL"); // Captura a fonte enviada
 
-    try {
-        if (gertecPrinter.isImpressoraOK()) {
-            configPrint.setAlinhamento(alinhar);
-            configPrint.setTamanho(size);
-            configPrint.setFonte(fonte); // Define a fonte na configuração
-            configPrint.setAvancaLinhas(2);
-            
-            gertecPrinter.setConfigImpressao(configPrint);
-            gertecPrinter.imprimeTexto(mensagem);
-            
-            gertecPrinter.ImpressoraOutput(); 
-            call.resolve();
-        } else {
-            call.reject("Impressora não está pronta ou sem papel.");
+        try {
+            if (gertecPrinter.isImpressoraOK()) {
+                configPrint.setAlinhamento(alinhar);
+                configPrint.setTamanho(size);
+                configPrint.setFonte(fonte); // Define a fonte na configuração
+                configPrint.setAvancaLinhas(2);
+
+                gertecPrinter.setConfigImpressao(configPrint);
+                gertecPrinter.imprimeTexto(mensagem);
+
+                gertecPrinter.ImpressoraOutput();
+                call.resolve();
+            } else {
+                call.reject("Impressora não está pronta ou sem papel.");
+            }
+        } catch (Exception e) {
+            call.reject("Erro na impressão: " + e.getMessage());
         }
-    } catch (Exception e) {
-        call.reject("Erro na impressão: " + e.getMessage());
     }
-}
 
     @PluginMethod
     public void statusImpressora(PluginCall call) {
