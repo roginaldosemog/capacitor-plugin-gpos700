@@ -2,6 +2,12 @@
 
 Plugin for GPOS700
 
+<span class="badge-npmversion">
+  <a href="https://npmjs.org/package/capacitor-plugin-gpos700" title="View this project on NPM">
+    <img src="https://img.shields.io/npm/v/capacitor-plugin-gpos700.svg" alt="NPM version" />
+  </a>
+</span>
+
 ## Install
 
 ```bash
